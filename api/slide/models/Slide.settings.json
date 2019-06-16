@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "slides",
+  "info": {
+    "name": "slide",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

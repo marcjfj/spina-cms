@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "reservations",
+  "info": {
+    "name": "reservation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "type": {
+      "enum": [
+        "Field Trip",
+        "Party"
+      ],
+      "type": "enumeration"
+    },
+    "start": {
+      "type": "date"
+    },
+    "end": {
+      "type": "date"
+    },
+    "user": {
+      "type": "email"
+    }
+  }
+}
